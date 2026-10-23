@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="540" height="120">
+  <defs>
+    <linearGradient id="goldH" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A73A" />
+      <stop offset="50%" stop-color="#F7E6B5" />
+      <stop offset="100%" stop-color="#B88508" />
+    </linearGradient>
+    <linearGradient id="plumBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581B50" />
+      <stop offset="100%" stop-color="#67235E" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Symbol: Ciruela circle with gold ring & refined EI monogram -->
+  <g transform="translate(10, 10)">
+    <rect width="100" height="100" rx="24" fill="url(#plumBg)" />
+    <circle cx="50" cy="50" r="38" fill="none" stroke="url(#goldH)" stroke-width="2" stroke-dasharray="190 14" stroke-dashoffset="6" />
+    <circle cx="50" cy="50" r="42" fill="none" stroke="#D4A73A" stroke-width="0.75" stroke-opacity="0.35" />
+    <text x="50" y="64" font-family="'Playfair Display', Georgia, serif" font-size="44" font-weight="600" fill="url(#goldH)" text-anchor="middle" letter-spacing="-1">EI</text>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(128, 20)">
+    <!-- Primary Name -->
+    <text x="0" y="46" font-family="'Playfair Display', Georgia, serif" font-size="38" font-weight="600" fill="#67235E" letter-spacing="1.2">ETERNAL INSTITUTE</text>
+    
+    <!-- Secondary Descriptor -->
+    <text x="2" y="72" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#B88508" letter-spacing="4.8">MEDICINA ESTÉTICA RESPONSABLE</text>
+    
+    <!-- Fine geometric divider dot and line -->
+    <line x1="2" y1="84" x2="380" y2="84" stroke="#CCD6DF" stroke-width="0.8" />
+    <circle cx="190" cy="84" r="2.5" fill="#D4A73A" />
+  </g>
+</svg>

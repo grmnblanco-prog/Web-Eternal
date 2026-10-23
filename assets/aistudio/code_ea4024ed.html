@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Eternal Institute</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;family=Syne:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#FAF7F2;color:#1c1c19;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tinta-suave": "#494D50", "on-error-container": "#93000a", "outline": "#8c7075", "on-tertiary": "#ffffff", "primary-fixed": "#ffd9df", "background": "#fcf9f4", "on-primary-container": "#fff2f3", "primary-fixed-dim": "#ffb1c1", "on-secondary-container": "#7c3671", "tertiary-container": "#936900", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "on-background": "#1c1c19", "tertiary-fixed-dim": "#f8bd47", "surface-container": "#f0ede9", "surface-container-low": "#f6f3ee", "primary": "#aa144e", "dorado-claro": "#D4A73A", "surface": "#fcf9f4", "niebla": "#CCD6DF", "on-primary-fixed-variant": "#90003e", "tinta": "#333333", "on-tertiary-container": "#fff4e6", "secondary-fixed-dim": "#ffacec", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#5e4200", "surface-container-high": "#ebe8e3", "on-primary-fixed": "#3f0017", "surface-bright": "#fcf9f4", "outline-variant": "#e0bec4", "on-secondary-fixed-variant": "#712c67", "secondary-fixed": "#ffd7f2", "surface-variant": "#e5e2dd", "on-error": "#ffffff", "on-surface-variant": "#584045", "on-surface": "#1c1c19", "on-primary": "#ffffff", "inverse-surface": "#31302d", "on-secondary": "#ffffff", "tertiary-fixed": "#ffdea7", "secondary": "#8c4480", "primary-container": "#cc3366", "on-tertiary-fixed": "#271900", "inverse-on-surface": "#f3f0eb", "on-secondary-fixed": "#390035", "inverse-primary": "#ffb1c1", "tertiary": "#735200", "surface-dim": "#dcdad5", "surface-tint": "#b41e55", "secondary-container": "#fea7eb", "surface-container-highest": "#e5e2dd", "marfil": "#FAF7F2" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-2xl": "4rem", "margin": "1.25rem", "gutter-desktop": "2.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin-desktop": "4rem", "space-3xl": "6rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin-tablet": "2rem", "space-sm": "0.5rem" }, fontFamily: { "headline-sm": ["Syne"], "display-xl": ["Syne"], "label-sm": ["DM Sans"], "headline-lg-mobile": ["Syne"], "display-xl-mobile": ["Syne"], "body-sm": ["DM Sans"], "body-lg": ["DM Sans"], "headline-lg": ["Syne"], "title-md": ["Syne"], "headline-md": ["Syne"], "label-md": ["DM Sans"], "body-md": ["DM Sans"] }, fontSize: { "headline-sm": ["1.5rem", { "lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "500" }], "display-xl": ["4.5rem", { "lineHeight": "1.05", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-sm": ["0.6875rem", { "lineHeight": "1.3", "letterSpacing": "0.1em", "fontWeight": "500" }], "headline-lg-mobile": ["2rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-xl-mobile": ["2.75rem", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["0.875rem", { "lineHeight": "1.55", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.65", "letterSpacing": "0", "fontWeight": "400" }], "headline-lg": ["3rem", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-md": ["1.25rem", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["2rem", { "lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1.4", "letterSpacing": "0.08em", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-marfil text-on-surface font-body-md min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 bg-marfil/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Eternal Institute Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UKOMYGdQxIquW_SqDI4xmZA1z3HUcBiCeptVaZiCRDtFA8m_KVw2XUp2tnuNrSsY8ZPi8oC4Iub2S8Vf5kzW-9_2M2B7HChHdSArBOSc4FNzrI4bH3XzAS50brPvxgnNXRTRgdiiJQlfSb1ZEp_arqS9GFvtbntrhepH5FpNwYePxBFmfjMUoMTbzNRoyCbRveydmWeeOv68O0G5RW8-kKtTFspnPhbtJ7pgIM6GUj8WNDWCFMjwsmjQ0"/><div class="flex flex-col truncate"><span class="font-headline-sm text-title-md text-on-surface tracking-tight uppercase leading-none truncate">Eternal</span><span class="font-label-sm text-label-sm text-tertiary tracking-widest uppercase truncate leading-none mt-0.5">Medicina Responsable</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><a class="h-11 px-space-md bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center hover:bg-tertiary transition-colors duration-200" data-path="valoracion" href="#">Valoración</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-marfil pt-16"><div class="flex flex-col w-full">
+<!-- 1. Hero Section -->
+<section class="relative px-margin pt-space-lg pb-space-2xl overflow-hidden">
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Ética Badge -->
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 bg-surface-container-low text-tertiary">
+<span class="material-symbols-outlined text-[16px] text-dorado-claro" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tinta">Previa valoración médica individual · Sin promesas irreales</span>
+</div>
+<!-- Titular Principal -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-secondary tracking-tight">
+        Medicina estética responsable orientada a tu bienestar
+      </h1>
+<!-- Subtítulo Factual -->
+<p class="font-body-md text-body-md text-tinta-suave max-w-prose">
+        Acompañamos a cada persona con seguimiento personalizado, responsable y detallado en nuestras sedes de Chía y Zipaquirá.
+      </p>
+<!-- Botones de Acción -->
+<div class="flex flex-col sm:flex-row gap-space-sm pt-space-xs">
+<a class="h-12 px-space-xl bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center transition-colors duration-200 active:opacity-90" data-path="valoracion" href="#">
+          Agendar valoración
+        </a>
+<a class="h-12 px-space-lg bg-surface-container-low text-tinta font-label-md text-label-md uppercase tracking-wider flex items-center justify-center transition-colors duration-200" data-path="servicios" href="#">
+          Ver servicios
+        </a>
+</div>
+<!-- Imagen Arquitectónica / Clínica Noble -->
+<div class="mt-space-md relative w-full h-64 bg-surface-container overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Modern architectural aesthetic clinic interior with natural daylight pouring into a minimalist consultation suite. Ivory colored walls, soft natural linen textures, subtle plum undertones, warm organic lighting, and high-end medical equipment discreetly integrated, creating a serene, strictly professional, and ethical sanctuary." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdrPPioesSdWticwcP18MU-qHVWeN3a7CyavtFScCJXLau4noBooHGKWLD80aP8Jl4OIyaPZsrPTrCsao5D3mZp3Ih9vL6dNyxDHe1Ua4KIRZj18FaiPsLpRyVKkzUNx0_LesbfJ8WQFnBhbFUe2sceNMEfCIkpFtYEwMwqSn3QdktiHNgNhQAQhzE562FB4kBCGcQ8jkn_SoTEMXCEN1TsjRKLvhCJOsZ_udWEX42C90MounmbkBDcg"/>
+<div class="absolute bottom-0 inset-x-0 bg-surface-container-high/90 backdrop-blur-sm p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-sm">spa</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Espacios de diagnóstico biomédico serenos</span>
+</div>
+<span class="font-label-sm text-label-sm text-tinta-suave">Chía · Zipaquirá</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Por Qué Elegirnos: 4 Pilares Verificados -->
+<section class="px-margin py-space-xl bg-surface-container-low">
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest font-semibold">Fundamentos Clínicos</span>
+<h2 class="font-headline-sm text-headline-sm text-secondary tracking-tight">Rigor científico y criterio individual</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave">Cuatro pilares éticos respaldan nuestra práctica médica diaria sin recurrir a expectativas desmedidas.</p>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Pilar 1 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200 hover:bg-surface-container">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 bg-surface-container flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">dermatology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Tratamientos faciales y corporales</h3>
+<p class="font-body-sm text-body-sm text-tinta-suave">Orientados a mejorar la salud, la estética y la autoestima de cada persona mediante protocolos adaptados a tu fisiología.</p>
+</div>
+</div>
+</div>
+<!-- Pilar 2 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200 hover:bg-surface-container">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 bg-surface-container flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">chips</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Infraestructura y equipos</h3>
+<p class="font-body-sm text-body-sm text-tinta-suave">Sedes cómodas con equipos de tecnología adecuada para garantizar una atención diagnóstica personalizada y precisa.</p>
+</div>
+</div>
+</div>
+<!-- Pilar 3 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200 hover:bg-surface-container">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 bg-surface-container flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">clinical_notes</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Amplia experiencia médica</h3>
+<p class="font-body-sm text-body-sm text-tinta-suave">Equipo clínico liderado por Martha Lucía Aguilera Muñoz, con una trayectoria continuada de casi veinte años en el sector.</p>
+</div>
+</div>
+</div>
+<!-- Pilar 4 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200 hover:bg-surface-container">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 bg-surface-container flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">family_restroom</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Atención integral y cercana</h3>
+<p class="font-body-sm text-body-sm text-tinta-suave">Seguimiento personalizado, responsable y detallado durante cada fase del proceso terapéutico y preventivo.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Servicios Destacados -->
+<section class="px-margin py-space-xl">
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest font-semibold">Áreas Clínicas Clave</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold uppercase">3 de 15</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-secondary tracking-tight">Servicios Destacados</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave">Tratamientos no quirúrgicos planificados tras un estudio anatómico facultativo riguroso.</p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Tarjeta 1: Sobrepeso -->
+<div class="bg-surface-container-lowest shadow-sm flex flex-col overflow-hidden">
+<div class="h-44 w-full bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Nutritional consultation desk in an elegant medical office. A physician reviews metabolic charts with clean stationery, a stethoscope resting nearby, bathed in soft morning light over ivory surfaces with deep purple accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDodznSvzu7ro_M2vpYpvlmLVDQNen0z6CpjqqXPOGdv16WdyehhKZ6o4U7IoRLstRFjuQ_fFDMFtiL1UUJtTdPyHDMusLTVaX0ih31e5V98KzSnn0IKUYk1oJAz_feYR1fHhlejStBbNeV-yiR3ixqfEoEYweAZOHE-PBhQwSMeZ2haIrNdCeUs-MWPyvGCzTMfSXT4sawRdoesEPr7ib0NWmBqpt4bjzmKYFW5nOWbOpohUpNs388Pw"/>
+<span class="absolute top-3 left-3 px-space-xs py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">Metabólico</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Manejo de sobrepeso</h3>
+<p class="font-body-sm text-body-sm text-tinta-suave">Acompañamiento profesional y seguimiento continuo en tu proceso para construir metas sostenibles y saludables.</p>
+<div class="pt-space-xs mt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Sujeto a valoración previa</span>
+<a class="text-primary-container font-label-md text-label-md uppercase tracking-wider flex items-center gap-1 hover:text-tertiary transition-colors" data-path="servicios" href="#">
+              Conocer más <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Tarjeta 2: Facial -->
+<div class="bg-surface-container-lowest shadow-sm flex flex-col overflow-hidden">
+<div class="h-44 w-full bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Close up of a tranquil facial rejuvenation consultation in a high-end medical clinic. An aesthetic doctor meticulously examines skin texture using state of the art diagnostic tools, minimalist ivory and warm gold atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoUrFEdRJgoD_lpBP7Tpp9rMmWNq77eoDnkBzC9QZtV2t61ISP3ysdCYA816rCL-1sBw9GyRg-SyciUJwz2_IcPoUrafdccwzpzfcCvfiZeRMYeo4Ktq46EtPsgZlfFZXdL9Sc7zZ2pZEzEWdECuyl-fbWtWkyLrOIZFAYTJqyJgvxj0r2Y5ut7kbpGUGr1TY83pYO8zG4jWZgDvK9kYJSpRbu2VQxOFDCwveEIlmRJ8kRKvXobEwDWw"/>
+<span class="absolute top-3 left-3 px-space-xs py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">Dermocosmética</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Rejuvenecimiento facial</h3>
+<p class="font-body-sm text-body-sm text-tinta-suave">Procedimientos no invasivos orientados al cuidado y armonía del rostro, preservando siempre la expresividad natural.</p>
+<div class="pt-space-xs mt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Sujeto a valoración previa</span>
+<a class="text-primary-container font-label-md text-label-md uppercase tracking-wider flex items-center gap-1 hover:text-tertiary transition-colors" data-path="servicios" href="#">
+              Conocer más <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Tarjeta 3: Depilación Láser -->
+<div class="bg-surface-container-lowest shadow-sm flex flex-col overflow-hidden">
+<div class="h-44 w-full bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Modern certified laser treatment room with sleek ergonomic chair, certified laser handpiece, calibrated protective goggles, and soft neutral illumination inside a disciplined ivory architectural clinic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlScQAc18ksQaAnHoKeP6_iXXIhKEAjhwTD5N2ovm6-haof9z4_Uxmtx3sJWI36q9-TtUwo2z1X9v2VjXZZSngBc-OSEEx6ltKJPARoE4GBd7B20JCAP11PSzE9N7GwtztSoAv47NvBtBL8J2OXORAaMZYwypWvqk7uuD5K4kpfGOqrsSgF8_6Y1hp-_rh1MPdbmmUhCxjKLS8pWHcGz-A4-RRGUi0QHceVM_CIXw7pIMa6vYfzLbTNA"/>
+<span class="absolute top-3 left-3 px-space-xs py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">Tecnología</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface">Depilación láser definitiva</h3>
+<p class="font-body-sm text-body-sm text-tinta-suave">Tecnología láser con protocolo individual según valoración del fototipo y densidad de la zona a tratar.</p>
+<div class="pt-space-xs mt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Sujeto a valoración previa</span>
+<a class="text-primary-container font-label-md text-label-md uppercase tracking-wider flex items-center gap-1 hover:text-tertiary transition-colors" data-path="servicios" href="#">
+              Conocer más <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Enlace destacado al catálogo completo -->
+<div class="mt-space-md text-center">
+<a class="inline-flex items-center gap-space-xs py-space-sm px-space-md text-secondary font-headline-sm text-title-md hover:text-primary-container transition-colors" data-path="servicios" href="#">
+<span>Explorar los 15 servicios médicos</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- 4. Sedes en Cundinamarca -->
+<section class="px-margin py-space-xl bg-surface-container-low">
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest font-semibold">Presencia Regional</span>
+<h2 class="font-headline-sm text-headline-sm text-secondary tracking-tight">Sedes en Cundinamarca</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave">Instalaciones autorizadas concebidas para brindarte tranquilidad, privacidad y confort.</p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Sede Chía -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-xl">location_city</span>
+<h3 class="font-title-md text-title-md text-on-surface">Sede Chía</h3>
+</div>
+<span class="px-space-xs py-0.5 bg-surface-container text-tinta-suave font-label-sm text-label-sm uppercase">Sabana Centro</span>
+</div>
+<p class="font-body-sm text-body-sm text-tinta">
+          Centro Comercial Sabana Norte, Local 129<br/>
+<span class="text-tinta-suave">Avenida Pradilla 2 Este 71</span>
+</p>
+<div class="flex items-center gap-space-xs text-tinta-suave font-body-sm text-body-sm pt-space-xs">
+<span class="material-symbols-outlined text-tertiary text-base">schedule</span>
+<span>Lun - Vie: 10:00 a. m. a 7:00 p. m. | Sáb: 9:00 a. m. a 1:00 p. m.</span>
+</div>
+<div class="w-full h-32 bg-surface-container mt-space-xs bg-cover bg-center" data-location="Centro Comercial Sabana Norte Chía Colombia" style=""></div>
+<a class="self-start font-label-md text-label-md text-tertiary uppercase tracking-wider flex items-center gap-1 hover:text-secondary pt-space-xs" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+          Ver ruta de acceso <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<!-- Sede Zipaquirá -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-xl">location_city</span>
+<h3 class="font-title-md text-title-md text-on-surface">Sede Zipaquirá</h3>
+</div>
+<span class="px-space-xs py-0.5 bg-surface-container text-tinta-suave font-label-sm text-label-sm uppercase">Sabana Centro</span>
+</div>
+<p class="font-body-sm text-body-sm text-tinta">
+          Centro Comercial La Casona, Local 230<br/>
+<span class="text-tinta-suave">Sector Histórico &amp; Comercial</span>
+</p>
+<div class="flex items-center gap-space-xs text-tinta-suave font-body-sm text-body-sm pt-space-xs">
+<span class="material-symbols-outlined text-tertiary text-base">schedule</span>
+<span>Lun - Vie: 10:00 a. m. a 7:00 p. m. | Sáb: 9:00 a. m. a 1:00 p. m.</span>
+</div>
+<div class="w-full h-32 bg-surface-container mt-space-xs bg-cover bg-center" data-location="Centro Comercial La Casona Zipaquirá Colombia" style=""></div>
+<a class="self-start font-label-md text-label-md text-tertiary uppercase tracking-wider flex items-center gap-1 hover:text-secondary pt-space-xs" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+          Ver ruta de acceso <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. Bloque de Cierre: El Primer Paso es tu Valoración -->
+<section class="px-margin py-space-2xl bg-secondary text-on-secondary relative overflow-hidden">
+<div class="flex flex-col gap-space-md relative z-10 max-w-lg mx-auto text-center items-center">
+<div class="w-12 h-12 bg-on-secondary/10 flex items-center justify-center text-dorado-claro mb-space-xs">
+<span class="material-symbols-outlined text-2xl">stethoscope</span>
+</div>
+<span class="font-label-sm text-label-sm text-dorado-claro uppercase tracking-widest font-semibold">Compromiso Bioético</span>
+<h2 class="font-headline-sm text-headline-sm tracking-tight text-on-secondary">
+        El primer paso es tu valoración médica individual
+      </h2>
+<p class="font-body-md text-body-md text-on-secondary/90 leading-relaxed">
+        Una valoración individual permite determinar de manera segura y profesional los procedimientos adecuados para ti, sin compromisos y con absoluta transparencia sobre tus posibilidades fisiológicas.
+      </p>
+<div class="w-full flex flex-col gap-space-sm pt-space-sm">
+<a class="h-12 w-full bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center transition-colors duration-200 hover:bg-dorado-claro hover:text-tinta active:scale-[0.99]" data-path="valoracion" href="#">
+          Solicitar valoración personalizada
+        </a>
+<span class="font-label-sm text-label-sm text-on-secondary/70 uppercase tracking-widest mt-1">
+          Atención en Chía o Zipaquirá · Agenda sujeta a disponibilidad facultativa
+        </span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for tactile feedback on service cards
+  document.querySelectorAll('[data-path]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      // Allow navigation handling if shell script exists
+      const target = link.getAttribute('data-path');
+      if (window.navigateToRoute) {
+        e.preventDefault();
+        window.navigateToRoute(target);
+      }
+    });
+  });
+</script><footer class="w-full bg-surface-container-high text-on-surface px-margin py-space-xl pb-36"><div class="max-w-md mx-auto flex flex-col gap-space-lg"><div class="flex flex-col gap-space-xs"><span class="font-headline-sm text-title-md uppercase tracking-tight text-secondary">Eternal Institute</span><span class="font-body-sm text-body-sm text-tinta-suave">Medicina Estética Ética &amp; Rigor Científico</span></div><div class="p-space-md bg-marfil"><span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-widest block mb-space-xs">Aviso Médico Riguroso</span><p class="font-body-sm text-body-sm text-tinta leading-relaxed">Todo procedimiento requiere valoración médica diagnóstica presencial previa. Los resultados responden a condiciones biológicas individuales bajo criterio facultativo ético.</p></div><div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-tinta-suave"><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-tertiary text-lg">location_on</span><span><strong>Sedes:</strong> Chía &amp; Zipaquirá (Cundinamarca)</span></div><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-tertiary text-lg">schedule</span><span><strong>Horarios:</strong> Lun - Vie 10:00 a.m. a 7:00 p.m. | Sábados 9:00 a.m. a 1:00 p.m.</span></div></div><div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-md text-tinta-suave font-label-sm text-label-sm uppercase tracking-wider"><span>© 2025 Eternal Institute</span><a class="text-tertiary underline hover:text-primary transition-colors" data-path="politicas" href="#">Tratamiento de Datos</a></div></div></footer></main><a aria-label="Contacto WhatsApp Oficial" class="fixed bottom-24 right-5 z-40 w-12 h-12 bg-[#25D366] text-white flex items-center justify-center shadow-[0_4px_16px_rgba(37,211,102,0.35)] hover:scale-105 active:scale-95 transition-all" href="https://wa.me/573114656836" rel="noopener noreferrer" target="_blank"><svg class="w-7 h-7 fill-current" viewbox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29"></path></svg></a><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-marfil/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-20 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-16 h-16 transition-all text-primary-container font-semibold" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">spa</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Inicio</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-tinta-suave hover:text-secondary transition-all" data-path="servicios" href="#"><span class="material-symbols-outlined text-[22px]">medical_services</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Servicios</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-tinta-suave hover:text-secondary transition-all" data-path="nosotras" href="#"><span class="material-symbols-outlined text-[22px]">award_star</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Nosotras</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-tinta-suave hover:text-secondary transition-all" data-path="sedes" href="#"><span class="material-symbols-outlined text-[22px]">apartment</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Sedes</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-tinta-suave hover:text-secondary transition-all" data-path="valoracion" href="#"><span class="material-symbols-outlined text-[22px]">event_available</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Cita</span></a></div></nav></body></html>

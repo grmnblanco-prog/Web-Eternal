@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="goldSq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A73A" />
+      <stop offset="50%" stop-color="#F7E6B5" />
+      <stop offset="100%" stop-color="#B88508" />
+    </linearGradient>
+    <linearGradient id="plumSqBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#551A4D" />
+      <stop offset="100%" stop-color="#67235E" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" rx="44" fill="url(#plumSqBg)" />
+  
+  <!-- Outer fine concentric gold rings -->
+  <circle cx="200" cy="165" r="95" fill="none" stroke="url(#goldSq)" stroke-width="2.5" stroke-dasharray="480 30" stroke-dashoffset="15" />
+  <circle cx="200" cy="165" r="105" fill="none" stroke="#D4A73A" stroke-width="0.8" stroke-opacity="0.35" />
+  
+  <!-- Center Monogram -->
+  <text x="200" y="198" font-family="'Playfair Display', Georgia, serif" font-size="94" font-weight="600" fill="url(#goldSq)" text-anchor="middle" letter-spacing="-2">EI</text>
+
+  <!-- Typography below -->
+  <text x="200" y="305" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="600" fill="#FAF7F2" text-anchor="middle" letter-spacing="2">ETERNAL INSTITUTE</text>
+  <text x="200" y="335" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#D4A73A" text-anchor="middle" letter-spacing="4">MEDICINA ESTÉTICA RESPONSABLE</text>
+  
+  <!-- Subtle gold dot accent -->
+  <circle cx="200" cy="358" r="3" fill="#D4A73A" />
+</svg>
