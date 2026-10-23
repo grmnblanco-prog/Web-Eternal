@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Eternal Institute</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;family=Syne:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#FAF7F2;color:#1c1c19;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tinta-suave": "#494D50", "on-error-container": "#93000a", "outline": "#8c7075", "on-tertiary": "#ffffff", "primary-fixed": "#ffd9df", "background": "#fcf9f4", "on-primary-container": "#fff2f3", "primary-fixed-dim": "#ffb1c1", "on-secondary-container": "#7c3671", "tertiary-container": "#936900", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "on-background": "#1c1c19", "tertiary-fixed-dim": "#f8bd47", "surface-container": "#f0ede9", "surface-container-low": "#f6f3ee", "primary": "#aa144e", "dorado-claro": "#D4A73A", "surface": "#fcf9f4", "niebla": "#CCD6DF", "on-primary-fixed-variant": "#90003e", "tinta": "#333333", "on-tertiary-container": "#fff4e6", "secondary-fixed-dim": "#ffacec", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#5e4200", "surface-container-high": "#ebe8e3", "on-primary-fixed": "#3f0017", "surface-bright": "#fcf9f4", "outline-variant": "#e0bec4", "on-secondary-fixed-variant": "#712c67", "secondary-fixed": "#ffd7f2", "surface-variant": "#e5e2dd", "on-error": "#ffffff", "on-surface-variant": "#584045", "on-surface": "#1c1c19", "on-primary": "#ffffff", "inverse-surface": "#31302d", "on-secondary": "#ffffff", "tertiary-fixed": "#ffdea7", "secondary": "#8c4480", "primary-container": "#cc3366", "on-tertiary-fixed": "#271900", "inverse-on-surface": "#f3f0eb", "on-secondary-fixed": "#390035", "inverse-primary": "#ffb1c1", "tertiary": "#735200", "surface-dim": "#dcdad5", "surface-tint": "#b41e55", "secondary-container": "#fea7eb", "surface-container-highest": "#e5e2dd", "marfil": "#FAF7F2" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-2xl": "4rem", "margin": "1.25rem", "gutter-desktop": "2.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin-desktop": "4rem", "space-3xl": "6rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin-tablet": "2rem", "space-sm": "0.5rem" }, fontFamily: { "headline-sm": ["Syne"], "display-xl": ["Syne"], "label-sm": ["DM Sans"], "headline-lg-mobile": ["Syne"], "display-xl-mobile": ["Syne"], "body-sm": ["DM Sans"], "body-lg": ["DM Sans"], "headline-lg": ["Syne"], "title-md": ["Syne"], "headline-md": ["Syne"], "label-md": ["DM Sans"], "body-md": ["DM Sans"] }, fontSize: { "headline-sm": ["1.5rem", { "lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "500" }], "display-xl": ["4.5rem", { "lineHeight": "1.05", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-sm": ["0.6875rem", { "lineHeight": "1.3", "letterSpacing": "0.1em", "fontWeight": "500" }], "headline-lg-mobile": ["2rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-xl-mobile": ["2.75rem", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["0.875rem", { "lineHeight": "1.55", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.65", "letterSpacing": "0", "fontWeight": "400" }], "headline-lg": ["3rem", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-md": ["1.25rem", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["2rem", { "lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1.4", "letterSpacing": "0.08em", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-marfil text-on-surface font-body-md min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 bg-marfil/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Eternal Institute Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UKOMYGdQxIquW_SqDI4xmZA1z3HUcBiCeptVaZiCRDtFA8m_KVw2XUp2tnuNrSsY8ZPi8oC4Iub2S8Vf5kzW-9_2M2B7HChHdSArBOSc4FNzrI4bH3XzAS50brPvxgnNXRTRgdiiJQlfSb1ZEp_arqS9GFvtbntrhepH5FpNwYePxBFmfjMUoMTbzNRoyCbRveydmWeeOv68O0G5RW8-kKtTFspnPhbtJ7pgIM6GUj8WNDWCFMjwsmjQ0"/><div class="flex flex-col truncate"><span class="font-headline-sm text-title-md text-on-surface tracking-tight uppercase leading-none truncate">Eternal</span><span class="font-label-sm text-label-sm text-tertiary tracking-widest uppercase truncate leading-none mt-0.5">Medicina Responsable</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><a class="h-11 px-space-md bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center hover:bg-tertiary transition-colors duration-200" data-path="valoracion" href="#">Valoración</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-marfil pt-16"><div class="flex flex-col w-full">
+<!-- Architectural Hero & Framing Header -->
+<section class="px-margin pt-space-lg pb-space-md flex flex-col gap-space-sm bg-surface">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-tertiary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary">Catálogo Clínico Regulado</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Nuestros Servicios</h1>
+<p class="font-body-md text-body-md text-tinta-suave leading-relaxed">
+      Procedimientos estéticos y de bienestar orientados a tus necesidades individuales. Todo tratamiento requiere valoración profesional previa presencial.
+    </p>
+</section>
+<!-- Interactive Category Filter (Pill Strip) -->
+<section class="sticky top-16 z-30 bg-surface/95 backdrop-blur-md px-margin py-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto scrollbar-none py-1" id="category-pills">
+<button class="service-pill px-space-md py-1.5 bg-secondary text-marfil font-label-md text-label-md uppercase tracking-wider flex-shrink-0 transition-all duration-200" onclick="filterServices('todos', this)">
+        Todos (15)
+      </button>
+<button class="service-pill px-space-md py-1.5 bg-surface-container text-tinta font-label-md text-label-md uppercase tracking-wider flex-shrink-0 hover:bg-surface-container-high transition-all duration-200" onclick="filterServices('facial', this)">
+        Faciales
+      </button>
+<button class="service-pill px-space-md py-1.5 bg-surface-container text-tinta font-label-md text-label-md uppercase tracking-wider flex-shrink-0 hover:bg-surface-container-high transition-all duration-200" onclick="filterServices('corporal', this)">
+        Corporales
+      </button>
+<button class="service-pill px-space-md py-1.5 bg-surface-container text-tinta font-label-md text-label-md uppercase tracking-wider flex-shrink-0 hover:bg-surface-container-high transition-all duration-200" onclick="filterServices('bienestar', this)">
+        Bienestar &amp; Otros
+      </button>
+</div>
+</section>
+<!-- Visual Editorial Anchor (Photo Placeholder) -->
+<section class="px-margin mt-space-md">
+<div class="w-full relative overflow-hidden bg-surface-container-high shadow-sm">
+<img class="w-full h-44 object-cover" data-alt="A luminous, minimalist aesthetic clinical consultation suite in warm ivory and travertine stone, featuring high ceilings, soft sculptural organic pottery, architectural clean lines, delicate golden sunlight filtering through sheer linen curtains, serene medical poise, captured in cinematic high-end editorial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEi8ZNOKORDhKzFjutw44bQElG9njsOYr_3GZPBCdqEUtTKLiqgDQwzfD1tDd53bJ1foCK2eJ3HWQAyZRMBcIOB6VclN5Kotuk3j26zyFzcayUcTo2IvPrQFuWudSVDTwx-ZZ3DTOh-mq0oUnPUYkl6Qhxc_yQufGJnFNt66u5DIkAz3nz-kcXDwBhMRgEYnC9AgBmgNEtqH0V-Y4GGMXIECoD7w11HlWfpxxiBwE6FNeSSpcQzhtmXA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/30 to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed font-bold">Rigor Científico &amp; Belleza Ética</span>
+<p class="font-headline-sm text-title-md text-surface-container-lowest font-medium">Diagnóstico individualizado antes de cada intervención</p>
+</div>
+</div>
+</section>
+<!-- Services Grid / Catalog -->
+<section class="px-margin py-space-lg flex flex-col gap-space-md" id="services-container">
+<!-- 1. Manejo de sobrepeso -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="corporal">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-tertiary tracking-wider font-semibold">Tratamiento Corporal</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Protocolo Clínico</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">1. Manejo de sobrepeso</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Acompañamiento profesional para el manejo del peso, con seguimiento personalizado durante todo el proceso.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 2. Moldeo corporal -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="corporal">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-tertiary tracking-wider font-semibold">Tratamiento Corporal</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Contorno</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">2. Moldeo corporal</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Tratamientos orientados a mejorar la apariencia y el contorno corporal.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 3. Celulitis -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="corporal">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-tertiary tracking-wider font-semibold">Tratamiento Corporal</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Textura Dérmica</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">3. Celulitis</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Tratamientos estéticos dirigidos a la apariencia de la piel con celulitis.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 4. Tonificación -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="corporal">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-tertiary tracking-wider font-semibold">Tratamiento Corporal</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Firmeza</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">4. Tonificación</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Procedimientos orientados a mejorar la firmeza y la apariencia de la piel.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 5. Rejuvenecimiento facial -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="facial">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-wider font-semibold">Tratamiento Facial</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">No Invasivo</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">5. Rejuvenecimiento facial</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Tratamientos no invasivos orientados a la apariencia de la piel del rostro.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 6. Armonización facial -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="facial">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-wider font-semibold">Tratamiento Facial</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Simetría</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">6. Armonización facial</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Procedimientos orientados a armonizar las proporciones del rostro, previa valoración profesional.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 7. Depilación láser definitiva -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="corporal">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-tertiary tracking-wider font-semibold">Tratamiento Corporal</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Fototermólisis</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">7. Depilación láser definitiva</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Reducción del vello mediante tecnología láser, con protocolo personalizado según cada persona.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 8. Maquillaje microblading -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="facial">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-wider font-semibold">Tratamiento Facial</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Cejas</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">8. Maquillaje microblading</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Técnica de maquillaje semipermanente para cejas.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 9. Maquillaje permanente -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="facial">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-wider font-semibold">Tratamiento Facial</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Semipermanente</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">9. Maquillaje permanente</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Maquillaje semipermanente de larga duración.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 10. Relajación -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="bienestar">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-tertiary tracking-wider font-semibold">Bienestar</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Equilibrio</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">10. Relajación</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Sesiones orientadas al bienestar y la relajación.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 11. Tratamiento de acné -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="facial">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-wider font-semibold">Tratamiento Facial</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Dermoestética</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">11. Tratamiento de acné</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Atención estética para piel con tendencia acneica, según valoración profesional.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 12. Tratamiento de manchas -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="facial">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-wider font-semibold">Tratamiento Facial</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Tono &amp; Luminosidad</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">12. Tratamiento de manchas</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Tratamientos orientados a la apariencia de manchas en la piel.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 13. Tratamiento de líneas de expresión -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="facial">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-wider font-semibold">Tratamiento Facial</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Suavizado</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">13. Tratamiento de líneas de expresión</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Tratamientos orientados a la apariencia de las líneas de expresión.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 14. Coaching -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="bienestar">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-tertiary tracking-wider font-semibold">Bienestar</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Presencial / Virtual</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">14. Coaching</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Acompañamiento personal, en modalidad presencial o virtual.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- 15. Bronceo -->
+<article class="service-card flex flex-col bg-surface-container-lowest p-space-md shadow-sm transition-all duration-200" data-category="bienestar">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-tertiary tracking-wider font-semibold">Bienestar &amp; Estética</span>
+<span class="px-2 py-0.5 bg-surface-container font-label-sm text-label-sm text-tinta-suave uppercase">Tonalidad</span>
+</div>
+<h2 class="font-headline-sm text-title-md text-on-surface mb-space-xs">15. Bronceo</h2>
+<p class="font-body-sm text-body-sm text-tinta-suave leading-relaxed mb-space-md">
+        Servicio de bronceado estético.
+      </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+          Previa Valoración
+        </span>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md uppercase tracking-wider text-primary-container font-bold hover:text-tertiary transition-colors" data-path="valoracion" href="#">
+          Consultar
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</section>
+<!-- Ethical & Sector Notice (Cuadro informativo destacado) -->
+<section class="px-margin pt-space-xs pb-space-lg">
+<div class="bg-surface-container-high p-space-lg flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-headline-sm">gavel</span>
+<span class="font-headline-sm text-title-md text-on-surface">Transparencia &amp; Marco Legal</span>
+</div>
+<p class="font-body-sm text-body-sm text-tinta leading-relaxed">
+        En cumplimiento con la ética médica y la normativa vigente en Colombia, no publicamos tarifas fijas sin una valoración diagnóstica individual. Cada organismo responde de forma única y el plan de tratamiento se formula con absoluta honestidad facultativa.
+      </p>
+</div>
+</section>
+<!-- Primary Conversion Section (CTA) -->
+<section class="px-margin pb-space-xl">
+<div class="bg-secondary p-space-lg flex flex-col items-center text-center gap-space-md shadow-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed font-bold">Inicia Tu Proceso con Responsabilidad</span>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-secondary leading-tight">
+        Diagnóstico ético adaptado a tu biología
+      </h3>
+<p class="font-body-sm text-body-sm text-surface-variant max-w-sm">
+        Reserva tu espacio presencial en nuestras sedes de Chía o Zipaquirá con nuestro equipo de profesionales.
+      </p>
+<a class="w-full py-3.5 px-space-md bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-widest font-semibold flex items-center justify-center gap-2 hover:bg-tertiary active:scale-95 transition-all duration-200 shadow-sm" data-path="valoracion" href="#">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+        Agendar valoración médica previa
+      </a>
+</div>
+</section>
+</div>
+<script>
+  function filterServices(category, clickedButton) {
+    // Update button active state
+    const pills = document.querySelectorAll('.service-pill');
+    pills.forEach(pill => {
+      pill.classList.remove('bg-secondary', 'text-marfil');
+      pill.classList.add('bg-surface-container', 'text-tinta');
+    });
+    clickedButton.classList.remove('bg-surface-container', 'text-tinta');
+    clickedButton.classList.add('bg-secondary', 'text-marfil');
+
+    // Filter cards
+    const cards = document.querySelectorAll('.service-card');
+    cards.forEach(card => {
+      const cardCat = card.getAttribute('data-category');
+      if (category === 'todos' || cardCat === category) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script><footer class="w-full bg-surface-container-high text-on-surface px-margin py-space-xl pb-36"><div class="max-w-md mx-auto flex flex-col gap-space-lg"><div class="flex flex-col gap-space-xs"><span class="font-headline-sm text-title-md uppercase tracking-tight text-secondary">Eternal Institute</span><span class="font-body-sm text-body-sm text-tinta-suave">Medicina Estética Ética &amp; Rigor Científico</span></div><div class="p-space-md bg-marfil"><span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-widest block mb-space-xs">Aviso Médico Riguroso</span><p class="font-body-sm text-body-sm text-tinta leading-relaxed">Todo procedimiento requiere valoración médica diagnóstica presencial previa. Los resultados responden a condiciones biológicas individuales bajo criterio facultativo ético.</p></div><div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-tinta-suave"><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-tertiary text-lg">location_on</span><span><strong>Sedes:</strong> Chía &amp; Zipaquirá (Cundinamarca)</span></div><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-tertiary text-lg">schedule</span><span><strong>Horarios:</strong> Lun - Vie 10:00 a.m. a 7:00 p.m. | Sábados 9:00 a.m. a 1:00 p.m.</span></div></div><div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-md text-tinta-suave font-label-sm text-label-sm uppercase tracking-wider"><span>© 2025 Eternal Institute</span><a class="text-tertiary underline hover:text-primary transition-colors" data-path="politicas" href="#">Tratamiento de Datos</a></div></div></footer></main><a aria-label="Contacto WhatsApp Oficial" class="fixed bottom-24 right-5 z-40 w-12 h-12 bg-[#25D366] text-white flex items-center justify-center shadow-[0_4px_16px_rgba(37,211,102,0.35)] hover:scale-105 active:scale-95 transition-all" href="https://wa.me/573114656836" rel="noopener noreferrer" target="_blank"><svg class="w-7 h-7 fill-current" viewbox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29"></path></svg></a><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-marfil/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-tinta-suave hover:text-secondary transition-all" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">spa</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Inicio</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-16 h-16 transition-all text-primary-container font-semibold" data-path="servicios" href="#"><span class="material-symbols-outlined text-[22px]">medical_services</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Servicios</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-tinta-suave hover:text-secondary transition-all" data-path="nosotras" href="#"><span class="material-symbols-outlined text-[22px]">award_star</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Nosotras</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-tinta-suave hover:text-secondary transition-all" data-path="sedes" href="#"><span class="material-symbols-outlined text-[22px]">apartment</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Sedes</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-tinta-suave hover:text-secondary transition-all" data-path="valoracion" href="#"><span class="material-symbols-outlined text-[22px]">event_available</span><span class="font-label-sm text-label-sm uppercase tracking-wider">Cita</span></a></div></nav></body></html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Monochrome square in #333333 on transparent or light background -->
+  <rect width="400" height="400" rx="44" fill="none" stroke="#333333" stroke-width="3" />
+  <circle cx="200" cy="165" r="95" fill="none" stroke="#333333" stroke-width="2.5" stroke-dasharray="480 30" stroke-dashoffset="15" />
+  <text x="200" y="198" font-family="'Playfair Display', Georgia, serif" font-size="94" font-weight="600" fill="#333333" text-anchor="middle" letter-spacing="-2">EI</text>
+
+  <text x="200" y="305" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="600" fill="#333333" text-anchor="middle" letter-spacing="2">ETERNAL INSTITUTE</text>
+  <text x="200" y="335" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#494D50" text-anchor="middle" letter-spacing="4">MEDICINA ESTÉTICA RESPONSABLE</text>
+  <circle cx="200" cy="358" r="3" fill="#333333" />
+</svg>

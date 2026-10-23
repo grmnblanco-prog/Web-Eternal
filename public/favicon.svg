@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="goldFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A73A" />
+      <stop offset="50%" stop-color="#F3DE9C" />
+      <stop offset="100%" stop-color="#B88508" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#67235E" />
+  <!-- Elegant geometric golden ring -->
+  <circle cx="60" cy="60" r="42" fill="none" stroke="url(#goldFav)" stroke-width="2.5" stroke-dasharray="240 18" stroke-dashoffset="10" />
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#D4A73A" stroke-width="0.75" stroke-opacity="0.4" />
+  <!-- Monogram E & I in refined classical serif -->
+  <g fill="url(#goldFav)" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif">
+    <text x="60" y="74" font-size="52" font-weight="600" text-anchor="middle" letter-spacing="-1">EI</text>
+  </g>
+</svg>

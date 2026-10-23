@@ -1,0 +1,6 @@
+{
+  "name": "Eternal Institute · Medicina Estética Responsable",
+  "description": "Centro de estética y medicina estética responsable en Chía y Zipaquirá. Seguimiento personalizado, responsable y detallado con valoración profesional previa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
